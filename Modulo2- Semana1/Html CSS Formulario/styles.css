@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="color"] {
+    padding: 2px;
+    height: 40px;
+}
+
+.terminos {
+    margin-top: 20px;
+}
+
+.terminos label {
+    display: inline;
+    font-weight: normal;
+}
+
+button {
+    background: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #003d80;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}

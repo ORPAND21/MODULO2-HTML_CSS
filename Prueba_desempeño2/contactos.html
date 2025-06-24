@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Orlando</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header para determinar el encabezado de la pagina web -->
+    <header>
+            
+        <img src="imagenes/Logo.png" alt="Logo"> <!-- img para insertar una imagen  -->
+        
+        <nav> <!-- nav crear el menu  --> 
+            <ul> <!-- ul crear la lista  -->
+                <li><a href="index.html">Inicio</a></li> <!-- <li><a> para enlazar las diferentes paginas al menu principal  -->
+                <li><a href="presentacion_personal.html">Presentación personal</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <!-- main para el contenido principal -->
+    <main>
+        <h1>Contactos</h1>
+        <section>
+            <h3>Redes Sociales</h3>
+            <a href="https://github.com/ORPAND21"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24"></a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="LinkedIn" width="24"></a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPoJXHJz12rrmDu_4UHJbxNs3zlYZf0L72w&s" alt="Twitter" width="24"></a>
+
+            <h4>Si quieres enviarme un correo mas detallado puedes contactarte llenando los siguientes apartados</h4>
+            <form action="/send" method="post"> <!-- form funciona para crear un formulario -->
+                <label for="name">Nombre:</label> <!-- deteminar el nombre, email y Mensaje -->
+                <input type="text" id="name" name="name" required> <!-- para incertar la informacion -->
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+
+            <p><strong>Numero de contacto: </strong>+57 3502093058</p>
+        </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer>© Realizada por Orlando Tapias</footer>
+</body>
+</html>

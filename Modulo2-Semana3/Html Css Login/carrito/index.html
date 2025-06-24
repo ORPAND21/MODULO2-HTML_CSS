@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda en Línea - MiCarrito</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>🛍 MiCarrito</h1>
+    <p>¡La mejor tienda en línea para tus necesidades!</p>
+  </header>
+  <nav> <a href="#">Inicio</a> <a href="#">Productos</a> <a href="#">Ofertas</a> <a href="#">Contacto</a> </nav>
+  <main>
+    <section class="products">
+      <article class="product"> <img src="https://previews.123rf.com/images/redrockerz/redrockerz1601/redrockerz160100016/50854987-camisa-de-ilustraci%C3%B3n-de-bosquejo-del-dise%C3%B1o.jpg" alt="Producto 1" />
+        <h3>Camisa Clásica</h3>
+        <p>$25.000</p> <button onclick="addToCart('Camisa Clásica', 25000)">Agregar al carrito</button>
+      </article>
+      <article class="product"> <img src="https://www.lomas.pe/cdn/shop/files/IMG_0934.jpg?v=1700067606" alt="Producto 2" />
+        <h3>Zapatillas Deportivas</h3>
+        <p>$230.000</p> <button onclick="addToCart('Zapatillas Deportivas', 230000)">Agregar al carrito</button>
+      </article>
+      <article class="product"> <img src="https://img.freepik.com/psd-gratis/elegante-mochila-naranja-bolsa-viaje-moda_84443-43930.jpg?semt=ais_hybrid&w=740" alt="Producto 3" />
+        <h3>Mochila Escolar</h3>
+        <p>$60.000</p> <button onclick="addToCart('Mochila Escolar', 60000)">Agregar al carrito</button>
+      </article>
+    </section>
+    <aside>
+      <div class="cart">
+        <h2>🛒 Mi Carrito</h2>
+        <ul id="cart-items">
+        
+        </ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <p>&copy; 2025 MiCarrito. Todos los derechos reservados.</p>
+  </footer>
+
+  
+</body>
+
+</html>

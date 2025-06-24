@@ -1,0 +1,224 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modificamos el Body */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Modificamos el header */
+header img {
+    width: 50px;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    padding: 20px;
+
+}
+
+/* Modificamos el nav */
+nav ul{
+    list-style: none;
+    display: flex;   
+    gap: 20PX;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a:hover{
+    font-size: 115%;
+    color: rgb(26, 104, 116);
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 0;
+}
+
+main img{
+    max-width: 300px;
+    height: auto;
+    grid-column: 1;
+
+
+}
+
+main h2{
+    height: auto;
+    grid-column: 2;
+}
+
+main p {
+    grid-column: 2;
+    
+}
+
+/* Aca encontraras los titulos */
+
+h1{
+    color: #3a093f;
+    padding: 35px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
+}
+
+h2{
+    color: blueviolet;
+    padding: 20px;
+}
+
+h3{
+    color: #464449;
+    padding: 10px;
+}
+
+
+img {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    max-width: 50%;
+    height: auto;
+    
+}
+
+/* Figura e imagen */
+figure{
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Para rotar la imagen */
+figure img:hover{
+    transform: rotateZ(4deg)
+    
+}
+
+/* Articulo para centrar los titulos del los articulos */
+article{
+    text-align: center;
+}
+
+/* Estilo general para secciones de contenido */
+section {
+    margin-bottom: 30px;
+    padding: 35px;
+    background-color: #fff;
+    border-left: 4px solid #464449;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
+}
+
+/* Título de sección */
+section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+/* Pie de página */
+footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Media Query para Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 30px 15px;
+    }
+    
+    main img {
+        grid-column: 1;
+        max-width: 250px;
+        margin: 0 auto 20px;
+    }
+    
+    main h2, main p {
+        grid-column: 1;
+        text-align: center;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    section {
+        padding: 25px;
+    }
+}
+
+/* Media Query para Móviles (hasta 767px) */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    header img {
+        margin-bottom: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    main {
+        padding: 20px 10px;
+    }
+    
+    main img {
+        max-width: 200px;
+    }
+    
+    h1 {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        padding: 15px;
+        font-size: 1.3em;
+    }
+    
+    section {
+        padding: 15px;
+    }
+    
+    img {
+        max-width: 80%;
+    }
+}

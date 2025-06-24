@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio personal</title>
+</head>
+
+<!-- El body nos sirver para estructurar la pagina web, en el body estan los titulos y las secciones que tiene la pagina  -->
+
+<body>
+ <h1>Orlando Jose Tapias - Desarrollador Riwi</h1>  
+ 
+
+    <!-- Utilizamos el nav para agregar varios enlaces en este caso llamamos a las secciones ya previamente difinidas 
+    Se utiliza un ul para enlistar los enlaces de casa seccion  -->
+    <!-- Style sirve para colocar un color al titulo como tal mas dinamica a la pagina -->
+    <h2 style="background-color: chocolate;">Menu de navegacion</h2>
+    <nav>
+        <ul>
+        <li><a href="#sobre_mi">Presentacion</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contactos">Contactos</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- En esta seccion damos la presentacion para el portafolio,  damos introduccion a mi persona para brindar informacion previamente
+    para que el usuaria sepa mas de nosotros -->
+
+    <!-- con la semantica img llamamos a una imgagen previamente descargada de manera local en una carpeta llamada imagenes y le indecamos el tamaño     -->
+    <section id="sobre_mi">
+        <!-- Style sirve para colocar un color al titulo como tal mas dinamica a la pagina -->
+        <h2 style="background-color:slategray;">Presentacion</h2>
+        <p>Hola mucho gusto mi nombre es Orlando Tapias</p>
+        <p>
+            Me destaco por mi dedicación y capacidad para esforzarme al máximo en cada proyecto, 
+            buscando siempre superar mis límites. Como profesional, ofrezco confianza en mis habilidades, 
+            creatividad para resolver problemas y una mentalidad innovadora. 
+            Mi objetivo es aportar ideas disruptivas que contribuyan a revolucionar el mercado tecnológico, 
+            combinando conocimiento técnico con una visión fresca y adaptable.
+        </p>
+        <img width="200px" src="imagenes/perfil.webp" alt="Orlando" >
+    </section>
+
+
+    <!-- Creamos una lista para determinar que habilidades hemos adquirido, ul para determinar la lista y li para combertir esas habilidades a lista -->
+    <ul>
+        <li>Html</li>
+        <li>Python</li>
+        <li>Git/GitHub00</li>
+        <li>Metodologías Ágiles (Scrum)</li>
+    </ul>
+
+
+    <!-- Utilizamos br para dar un espacio en la visualizacion de la pagina -->
+    <br>
+
+
+    <!-- En esta segunda seccion creamos indecamos adonde estan los proyecto utilizamos los h1 para crear los titulos -->
+    <section id="proyectos">
+        <!-- Style sirve para colocar un color al titulo como tal mas dinamica a la pagina -->
+        <h1 style="background-color: darkslategrey;">Proyectos</h1>
+        <h4>
+            Mis proyectos en Python, como sistemas de inventario y validación de datos, 
+            reflejan mi capacidad para implementar soluciones robustas usando estructuras de datos y funciones.
+            A continuación, presento los detalles técnicos.
+        </h4>
+
+        <h2>Proyecto 1: Sistema de Validación de Productos</h2>
+        <p>
+            <!-- el strong sirve para colocar la palabra en negrillas  -->
+            <strong>Descripción:</strong> Desarrollo de un sistema en Python que valida la autenticidad y calidad de productos ingresados,
+            verificando datos como código de barras, fecha de caducidad y lote.
+            El sistema alerta sobre productos inválidos o próximos a vencer.
+        </p>
+
+        <h2>Proyecto 2: Gestor de Calificaciones Interactivo</h2>
+        <p>
+            <strong>Descripción:</strong> Programa en Python que permite a los usuarios ingresar calificaciones de estudiantes, calcular promedios, 
+            estadísticas (mínimo, máximo) y generar reportes en tiempo real. Interfaz intuitiva con menús interactivos.
+        </p>
+
+        <h2>Proyecto 3: Gestión de Inventario para Tienda</h2>
+        <p>
+            <strong>Descripción:</strong> Aplicación en Python para administrar inventarios: 
+            agregar, eliminar o buscar productos, actualizar stock y generar
+            reportes. Uso de estructuras de datos para optimizar búsquedas.
+        </p>
+
+        <h2>Proyecto 4: Dynamic Store Inventory System (Prueba de Desempeño)</h2>
+        <p>
+            <strong>Descripción:</strong> Sistema dinámico en inglés que gestiona inventarios con operaciones
+            CRUD (Crear, Leer, Actualizar, Eliminar). Incluye filtros por categorías y alertas de stock bajo.
+            <p><strong>Representacion en la terminal</strong></p>
+        </p>
+        <img src="imagenes/pruebadedesempeño.png" alt="Prueba de Desempeño">
+    </section>
+
+
+
+    <!-- Utilzamos un hr para hacer una linea horinzontal en la visualizacion de la pagina -->
+    <hr>
+    <br>
+    <!-- Hacemos una tabla para determinar los nombres de los proyectos, Tecnologia y links -->
+    <!-- style = "text-align": center;" sirve para alinear la tabla de contenido, en mi persona se mejor presentada -->
+    <table style="text-align: center;">
+        <tr>
+            <!-- Indicamos los encabezados de la tabla  -->
+            <th>Nombre del Proyecto</th>
+            <th>Tecnologia</th>
+            <th>Link</th>
+        <tr>
+            <!-- td realiza el primera ilera y con un enlazamos con git up el proyecto que se hizo -->
+            <td>Sistema de Validación de Productos  </td>
+            <td>Python</td>
+            <td><a href="https://github.com/ORPAND21/MODULO1-PYTHON/blob/main/Modulo1-Semana%201/Sistema_de_porcentaje.py">Sistema de Validación de Productos</a></td>
+        </tr>
+        <tr>
+            <td>Gestor de Calificaciones Interactivo</td>
+            <td>Python</td>
+            <td><a href="https://github.com/ORPAND21/MODULO1-PYTHON/blob/main/Modulo1-Semana%202/gestione_una_serie_de_calificaciones_y_estad%C3%ADsticas.py">Gestor de Calificaciones Interactivo</a></td>
+        </tr>
+        <tr>
+            <td>Gestión de Inventario para Tienda</td>
+            <td>Python</td>
+            <td><a href="https://github.com/ORPAND21/MODULO1-PYTHON/blob/main/Modulo1-Semana%203/inventario_de_producto.py">Gestión de Inventario para Tienda</a></td>
+        </tr>
+        <tr>
+            <td>Dynamic Store Inventory System (Prueba de Desempeño)</td>
+            <td>Python</td>
+            <td><a href="https://github.com/ORPAND21/MODULO1-PYTHON/blob/main/Prueba_desempe%C3%B1o/prueba_de_desempe%C3%B1o.py">Dynamic Store Inventory System (Prueba de Desempeño)</a></td>
+        </tr>
+    </table>
+    
+
+
+    <br>
+    <!-- Creamos una seccion para los contactos y los enlaces o donde el usuario nos puede contactar directamente -->
+    
+    <section id="contactos">
+        <!-- Style sirve para colocar un color al titulo como tal mas dinamica a la pagina -->
+        <h2 style="background-color: lightseagreen;">Contactos</h2>
+
+        <p><Strong>Puedes visualizar mas de mis proyectos en: </Strong><a href="https://github.com/ORPAND21" target="_blank">Github</a></p>
+        <p><strong>Numero de contacto: </strong>+57 3502093058</p>
+
+        
+        <br>
+        <!-- Se añade un formulario <form> que permita a los visitantes
+        contactarte. Incluye campos para el nombre, correo y un área de mensaje, con un botón de
+        envío -->
+        <h4>Si quieres enviarme un correo mas detallado puedes contactarte llenando los siguientes apartados</h4>
+        <form action="/send" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+</body>
+</html>
